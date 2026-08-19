@@ -1,0 +1,6 @@
+const loading=document.getElementById("loading"),lock=document.getElementById("lock"),content=document.getElementById("content"),transition=document.getElementById("bouquetTransition"),dots=[...document.querySelectorAll(".dots i")],wrong=document.getElementById("wrong");let code="";
+setTimeout(()=>loading.classList.add("hide"),1500);
+document.querySelectorAll(".keypad button[data-key]").forEach(b=>b.onclick=()=>{if(code.length>=4)return;code+=b.dataset.key;dots[code.length-1].classList.add("on");if(code.length===4){if(code==="0509"){unlock()}else{wrong.textContent="Try again ❤️";setTimeout(()=>{code="";dots.forEach(d=>d.classList.remove("on"));wrong.textContent=""},700)}}});
+document.getElementById("back").onclick=()=>{if(code){dots[code.length-1].classList.remove("on");code=code.slice(0,-1)}};
+function unlock(){lock.classList.add("fade");setTimeout(()=>{lock.style.display="none";transition.classList.add("show");setTimeout(()=>{transition.classList.remove("show");content.classList.add("show");window.scrollTo(0,0)},3200)},700)}
+document.getElementById("openStory").onclick=()=>document.querySelector(".memory").scrollIntoView({behavior:"smooth"});

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Rafik & Maryam — A Little Bouquet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading" class="loading">
+  <div class="loading-flower"><img src="assets/flowers/loading.jpg" alt=""></div>
+  <div class="loading-label">LOADING</div>
+</div>
+
+<div id="lock" class="lock-screen">
+  <div class="wash"></div>
+  <div class="floating f1">🌼</div><div class="floating f2">🌷</div><div class="floating f3">🌻</div>
+  <div class="lock-wrap">
+    <div class="lock-art">🔐</div>
+    <div class="small">From <b>Rafik</b><br>For <b>Maryam</b></div>
+    <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+    <div class="keypad">
+      <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+      <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+      <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+      <span></span><button data-key="0">0</button><button id="back">⌫</button>
+    </div>
+    <p id="wrong"></p>
+  </div>
+</div>
+
+<div id="bouquetTransition" class="bouquet-transition">
+  <img src="assets/flowers/bouquet.jpg" class="b1" alt="">
+  <img src="assets/flowers/close.jpg" class="b2" alt="">
+</div>
+
+<main id="content" class="content">
+  <section class="intro">
+    <div class="petal-field"></div>
+    <p class="tiny">A LITTLE BOUQUET FOR YOU</p>
+    <h1>Rafik <em>♡</em> Maryam</h1>
+    <p class="lead">A collection of little memories, kept in one place.</p>
+    <button class="open-btn" id="openStory">Open our story</button>
+  </section>
+
+  <section class="memory">
+    <p class="tiny">FROM THE BEGINNING</p>
+    <h2>Before we knew the story,<br>we were already living it.</h2>
+    <div class="portrait-row">
+      <figure><img src="assets/photos/rafik.jpg"><figcaption>Rafik</figcaption></figure>
+      <div class="heart">♡</div>
+      <figure><img src="assets/photos/maryam-01.jpg"><figcaption>Maryam</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <p class="tiny">MARYAM'S LITTLE ALBUM</p>
+    <h2>Her childhood memories</h2>
+    <div class="photo-grid">
+      <img src="assets/photos/maryam-02.jpg">
+      <img src="assets/photos/maryam-03.jpg">
+      <img src="assets/photos/maryam-04.jpg">
+    </div>
+  </section>
+
+  <section class="letter">
+    <div class="paper">
+      <p class="tiny">A NOTE FROM RAFIQ</p>
+      <h2>For Maryam,</h2>
+      <p>Some memories deserve a place of their own. So I made this little corner for you — filled with the moments that came before us, and the ones still waiting to be written.</p>
+      <p>Keep these close. They're part of our story. ❤️</p>
+      <div class="sign">— Rafik</div>
+    </div>
+  </section>
+
+  <footer>Made with love · Rafik & Maryam ♡</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
